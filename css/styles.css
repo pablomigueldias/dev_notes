@@ -1,0 +1,184 @@
+* {
+  background-color: #fdfdfd;
+  font-family: "Sticky Notes";
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(../img/Notebook\ Lines.png);
+  background-size: cover;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  background: none;
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 1300px;
+  height: 150px;
+}
+header h1 {
+  font-size: 70px;
+  margin-left: 190px;
+}
+header input[type="text"] {
+  padding: 20px;
+  width: 400px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 20px;
+}
+header input[type="text"]::placeholder {
+  font-size: 20px;
+}
+.barra-de-pesquisa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barra-de-pesquisa img {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-right: 10px;
+}
+.exportar-csv button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.exportar-csv button:hover {
+  background-color: #dfdfdf;
+  box-shadow: #000 5px 5px 25px;
+}
+.exportar-csv img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background: none;
+}
+main {
+  margin: 30px auto;
+  background: none;
+}
+.anotar-notes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  margin-top: 70px;
+}
+.anotar-notes input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.anotar-notes button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: 0.3s;
+}
+.anotar-notes img {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin-left: 10px;
+  background: none;
+}
+.anotar-notes button:hover {
+  transform: translate(5px, 0px);
+}
+.container {
+  background: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 260px;
+  min-width: 1300px;
+  min-height: 1000px;
+}
+.bloco-notas textarea {
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  left: 10px;
+  top: 10px;
+  height: 82%;
+  width: 85%;
+  border: none;
+}
+.bloco-notas textarea::placeholder {
+  text-align: center;
+}
+.bloco-notas .pin {
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  padding: 5px;
+  transition: 0.3s;
+}
+.bloco-notas .pin:hover {
+  opacity: 1;
+}
+
+.bloco-notas .cancel,
+.bloco-notas .add {
+  position: absolute;
+  cursor: pointer;
+  padding: 2px;
+  right: 2px;
+  top: 5px;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.bloco-notas .cancel:hover,
+.bloco-notas .add:hover {
+  opacity: 1;
+}
+.bloco-notas .add {
+  top: 45px;
+}
+
+.bloco-notas {
+  width: 270px;
+  height: 270px;
+  margin: 10px;
+  background-color: yellow;
+  box-shadow: #000 5px 10px 30px;
+  position: relative;
+}
+.bloco-notas img {
+  width: 25px;
+  height: 25px;
+  background: none;
+}
+.fixado {
+  background-color: #eaf8aa;
+}
